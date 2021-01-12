@@ -48,13 +48,21 @@ destroyAllWindows() function to close all the windows.
 ![image](https://user-images.githubusercontent.com/72543662/104284597-21c73480-5467-11eb-94b0-f86054acd60f.png)
 ![image](https://user-images.githubusercontent.com/72543662/104284772-6ce14780-5467-11eb-9e95-4ba7a5105a16.png)
 
+## 2. Develop a program to perform linear transformation on image. (Scaling and rotation) 
 
+## Scaling
 
+import cv2 as c
+img=c.imread("img3.jpg")
+c.imshow('image',img)
+nimg=c.resize(img,(0,0),fx=0.50,fy=0.50)
+c.imshow("Result",nimg)
+c.waitKey(0)
 
-
-
-
+## OUTPUT:
 ![image](https://user-images.githubusercontent.com/72543662/104287045-c008c980-546a-11eb-9aa5-b0de048a3caa.png)
+![image](https://user-images.githubusercontent.com/72543662/104287191-f2b2c200-546a-11eb-923b-951a18f3ca6d.png)
+
 
 
 
