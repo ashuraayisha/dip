@@ -83,8 +83,21 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72543662/104289132-9b622100-546d-11eb-8c09-1b7b01ff842e.png)
 ![image](https://user-images.githubusercontent.com/72543662/104289254-c51b4800-546d-11eb-93c2-e465c9418f9d.png)
 
+## 4.Write a program to convert color image into gray scale and binary image
 
+A binary image is the type of image where each pixel is black or white. You can also say the pixels as 0 or 1 value. Here 0 represents black and 1 represents a white pixel.
+To convert an RGB image into a binary type image, we need OpenCV. So first of all, if we don’t have OpenCV installed, then we can install it via pip.
+After that, read our image as grayscale. Grayscale is a simplified image and it makes the process simple. Below is the code to get grayscale data of the image.
+After that, read our image as grayscale. Grayscale is a simplified image and it makes the process simple. Below is the code to get grayscale data of the image.Now show the image.
 
+import cv2
+image=cv2.imread("img19.jpg")
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+(tresh,blackAndWhiteImage)=cv2.threshold(gray,127,255,cv2.THRESH_BINARY)
+cv2.imshow("gray",gray)
+cv2.imshow("BINARY",blackAndWhiteImage)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 
 
