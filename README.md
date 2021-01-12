@@ -60,6 +60,7 @@ c.imshow("Result",nimg)
 c.waitKey(0)
 
 **OUTPUT:**
+
 ![image](https://user-images.githubusercontent.com/72543662/104287045-c008c980-546a-11eb-9aa5-b0de048a3caa.png)
 ![image](https://user-images.githubusercontent.com/72543662/104287191-f2b2c200-546a-11eb-923b-951a18f3ca6d.png)
 
@@ -78,7 +79,9 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 **OUTPUT:**
+
 ![image](https://user-images.githubusercontent.com/72543662/104289132-9b622100-546d-11eb-8c09-1b7b01ff842e.png)
+![image](https://user-images.githubusercontent.com/72543662/104289254-c51b4800-546d-11eb-93c2-e465c9418f9d.png)
 
 
 
