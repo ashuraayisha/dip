@@ -7,7 +7,7 @@ The function imread() is used for reading an image
 The function imwrite() is used to write an image in memory to disk and
 The function imshow() in conjunction with namedWindow and waitKey is used for displaying an image in memory.
 
-**PROGRAM1
+**PROGRAM1**
 
 import cv2
 import numpy as np
