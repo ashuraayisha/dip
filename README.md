@@ -54,7 +54,7 @@ destroyAllWindows() function to close all the windows.
 
 
 
-
+![image](https://user-images.githubusercontent.com/72543662/104287045-c008c980-546a-11eb-9aa5-b0de048a3caa.png)
 
 
 
