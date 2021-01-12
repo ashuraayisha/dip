@@ -23,7 +23,7 @@ cv2.IMREAD_GRAYSCALE : Loads image in gray-scale mode
 cv2.IMREAD_UNCHANGED : Loads image as such including alpha channel
 Instead of these three flags, you can simply pass integers 1, 0 or -1 respectively.
 
-**PROGRAM2
+**PROGRAM2**
 
 import cv2
 import numpy as np
@@ -43,7 +43,7 @@ cv2.waitKey()
 The function waitKey(n) is used to wait for n milliseconds.
 destroyAllWindows() function to close all the windows.
 
-**OUTPUT:
+**OUTPUT:**
 
 ![image](https://user-images.githubusercontent.com/72543662/104284597-21c73480-5467-11eb-94b0-f86054acd60f.png)
 ![image](https://user-images.githubusercontent.com/72543662/104284772-6ce14780-5467-11eb-9e95-4ba7a5105a16.png)
@@ -59,7 +59,7 @@ nimg=c.resize(img,(0,0),fx=0.50,fy=0.50)
 c.imshow("Result",nimg)
 c.waitKey(0)
 
-## OUTPUT:
+**OUTPUT:**
 ![image](https://user-images.githubusercontent.com/72543662/104287045-c008c980-546a-11eb-9aa5-b0de048a3caa.png)
 ![image](https://user-images.githubusercontent.com/72543662/104287191-f2b2c200-546a-11eb-923b-951a18f3ca6d.png)
 
