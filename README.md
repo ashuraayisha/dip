@@ -104,5 +104,24 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72543662/104290229-f6e0de80-546e-11eb-9b3e-28e51f98d0bd.png)
 ![image](https://user-images.githubusercontent.com/72543662/104290360-1bd55180-546f-11eb-80d3-c4a6a31607c1.png)
 
+## 5.Write a program to convert color image into different color space.
+import cv2
+image=cv2.imread("img20.jpg")
+cv2.imshow("old",image)
+cv2.waitKey()
+hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+cv2.imshow("HSV",hsv)
+cv2.waitKey(0)
+lab = cv2.cvtColor(image, cv2.COLOR_BGR2LAB)
+cv2.imshow("LAB",lab)
+cv2.waitKey(0)
+hls = cv2.cvtColor(image, cv2.COLOR_BGR2HLS)
+cv2.imshow("HLS",hls)
+cv2.waitKey(0)
+yuv = cv2.cvtColor(image, cv2.COLOR_BGR2YUV)
+cv2.imshow("YUV",yuv)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+OUTPUT:
 
 
