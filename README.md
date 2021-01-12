@@ -50,7 +50,7 @@ destroyAllWindows() function to close all the windows.
 
 ## 2. Develop a program to perform linear transformation on image. (Scaling and rotation) 
 
-## Scaling
+**Scaling**: scaling transformation alters size of an object. In the scaling process, we either compress or expand the dimension of the object.
 
 import cv2 as c
 img=c.imread("img3.jpg")
@@ -63,9 +63,21 @@ c.waitKey(0)
 ![image](https://user-images.githubusercontent.com/72543662/104287045-c008c980-546a-11eb-9aa5-b0de048a3caa.png)
 ![image](https://user-images.githubusercontent.com/72543662/104287191-f2b2c200-546a-11eb-923b-951a18f3ca6d.png)
 
+**Rotation**:We have to rotate an object by a given angle about a given pivot point and print the new co-ordinates.
 
+import cv2 
+import numpy as np 
+img = cv2.imread('img22.jfif') 
+(rows, cols) = img.shape[:2] 
+M = cv2.getRotationMatrix2D((cols / 2, rows / 2), 120, 1) 
+res = cv2.warpAffine(img, M, (cols, rows)) 
+cv2.imshow('image', img)
+cv2.waitKey(0) 
+cv2.imshow('result',res) 
+cv2.waitKey(0) 
+cv2.destroyAllWindows()
 
-
+**OUTPUT:**
 
 
 
