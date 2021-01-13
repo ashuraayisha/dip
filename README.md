@@ -160,12 +160,14 @@ cv2.destroyAllWindows()
 import numpy as np
 from PIL import Image
 import cv2 as c 
-array = np.zeros([100, 200, 3], dtype=np.uint8)
-array[:,:100] = [150, 128, 0] #Orange left side
-array[:,100:] = [0, 0, 255]   #Blue right side
+array = np.zeros([200, 200, 3], dtype=np.uint8)
+array[:,:100] = [100, 118, 0] 
+array[:,100:] = [100,100, 245]  
 img = Image.fromarray(array)
-img.save('flower.jpg')
+img.save('images.jpg')
 img.show()
 c.waitKey(0)
 
 **OUTPUT:**
+
+![image](https://user-images.githubusercontent.com/72543662/104421431-2dcaf900-5530-11eb-9516-f5d512ac2558.png)
