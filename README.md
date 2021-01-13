@@ -112,6 +112,11 @@ print(mean)
 cv2.waitKey()
 cv2.destroyAllWindows() 
 
+**OUTPUT:**
+
+![image](https://user-images.githubusercontent.com/72543662/104437076-5c5ec900-555c-11eb-9170-2487d8031fb4.png)
+![image](https://user-images.githubusercontent.com/72543662/104437185-7ef0e200-555c-11eb-9afc-491043876131.png)
+
 ## 4.Write a program to convert color image into gray scale and binary image
 
 A binary image is the type of image where each pixel is black or white. You can also say the pixels as 0 or 1 value. Here 0 represents black and 1 represents a white pixel.
