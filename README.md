@@ -205,3 +205,43 @@ c.waitKey(0)
 **OUTPUT:**
 
 ![image](https://user-images.githubusercontent.com/72543662/104421431-2dcaf900-5530-11eb-9516-f5d512ac2558.png)
+
+## 7.Develop a program to find the neighbour of each element in the matrix.
+Here for each elements of the matrix.we are going to find then corresponding sum of matrix.
+numpy.zeros() or np.zeros Python function is used to create a matrix full of zeroes. numpy.zeros() in Python can be used when you initialize the weights.
+
+import numpy as np
+M = [[1, 1, 1],
+    [1, 1, 1],
+    [1, 1, 1]] 
+M = np.asarray(M)
+N = np.zeros(M.shape)
+def sumNeighbors(M,x,y):
+    l = []
+    for i in range(max(0,x-1),x+2): # max(0,x-1), such that no negative values in range() 
+        for j in range(max(0,y-1),y+2):
+            try:
+                t = M[i][j]
+                l.append(t)
+            except IndexError: # if entry doesn't exist
+                pass
+    return sum(l)-M[x][y] # exclude the entry itself
+for i in range(M.shape[0]):
+    for j in range(M.shape[1]):
+        N[i][j] = sumNeighbors(M, i, j)
+print ("question:\n", M)
+print ("answer:\n", N)
+
+**OUTPUT:**
+question:
+ [[1 1 1]
+ [1 1 1]
+ [1 1 1]]
+answer:
+ [[3. 5. 3.]
+ [5. 8. 5.]
+ [3. 5. 3.]]
+
+
+
+
