@@ -32,22 +32,22 @@ Instead of these three flags, you can simply pass integers 1, 0 or -1 respective
 
 import cv2
 import numpy as np
-
-image = cv2.imread('cat.jpg')
-image = cv2.resize(image, (0, 0), None, 1.00, 1.00)
-
+image = cv2.imread('jpg.webp')
+image = cv2.resize(image, (0, 0), None, .25, .25)
 grey = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
 grey_3_channel = cv2.cvtColor(grey, cv2.COLOR_GRAY2BGR)
-
 numpy_horizontal = np.hstack((image, grey_3_channel))
 numpy_horizontal_concat = np.concatenate((image, grey_3_channel), axis=1)
-
-cv2.imshow('cat', numpy_horizontal_concat)
+cv2.imshow('flower', numpy_horizontal_concat)
+cv2.imwrite("pg1.png",image)
 cv2.waitKey()
 
 The function waitKey(n) is used to wait for n milliseconds.
 destroyAllWindows() function to close all the windows.
 
+**OUTPUT:**
+
+![image](https://user-images.githubusercontent.com/72543662/104418814-5bae3e80-552c-11eb-841b-645f991916fe.png)
 
 
 ## 2. Develop a program to perform linear transformation on image. (Scaling and rotation) 
@@ -131,7 +131,7 @@ V : Value represents Intensity.
 
 import cv2
 image=cv2.imread("img20.jpg")
-cv2.imshow("old",image)
+cv2.imshow("before",image)
 cv2.waitKey()
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 cv2.imshow("HSV",hsv)
@@ -147,6 +147,6 @@ cv2.imshow("YUV",yuv)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-OUTPUT:
+**OUTPUT:**
 
 
