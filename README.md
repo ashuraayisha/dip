@@ -15,6 +15,11 @@ image = cv2.imread('pic1.jpeg',0)
 cv2.imshow('Original', image) 
 cv2.waitKey() 
 
+**OUTPUT:**
+
+![image](https://user-images.githubusercontent.com/72543662/104284597-21c73480-5467-11eb-94b0-f86054acd60f.png)
+![image](https://user-images.githubusercontent.com/72543662/104284772-6ce14780-5467-11eb-9e95-4ba7a5105a16.png)
+
 The cv2.imread() function returns a NumPy array representing the image.
 The first argument is the file name. The image should be in the working directory (or) a full path of the image should be given.
 The second argument is a flag which specifies the way image should be read. The different flags are described below:
@@ -43,10 +48,7 @@ cv2.waitKey()
 The function waitKey(n) is used to wait for n milliseconds.
 destroyAllWindows() function to close all the windows.
 
-**OUTPUT:**
 
-![image](https://user-images.githubusercontent.com/72543662/104284597-21c73480-5467-11eb-94b0-f86054acd60f.png)
-![image](https://user-images.githubusercontent.com/72543662/104284772-6ce14780-5467-11eb-9e95-4ba7a5105a16.png)
 
 ## 2. Develop a program to perform linear transformation on image. (Scaling and rotation) 
 
