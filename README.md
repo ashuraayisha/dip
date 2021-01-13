@@ -85,6 +85,33 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72543662/104289132-9b622100-546d-11eb-8c09-1b7b01ff842e.png)
 ![image](https://user-images.githubusercontent.com/72543662/104289254-c51b4800-546d-11eb-93c2-e465c9418f9d.png)
 
+## 3.Develop a program to find sum and mean of a set of images.Create n number of images and read the directory and perform operation.
+
+Adding all images(matrix of images) and finding the mean.mean() does, is simply summing all elements and then dividing by the number of all elements summed.
+
+import cv2
+import os
+path='E:\ip'
+imgs=[]
+dirs = os.listdir(path)
+for file in dirs :
+    fpat=path+"\\"+file
+    imgs.append(cv2.imread(fpat))
+i=0
+sum_image = []
+for sum_image in imgs:
+    read_image= imgs[i]
+    sum_image = sum_image + read_image
+    #cv2.imshow(dirs[i],imgs[i])
+    i = i +1
+cv2.imshow('sum',sum_image)
+print(sum_image)
+cv2.imshow('mean',sum_image/i)
+mean=(sum_image/i)
+print(mean)
+cv2.waitKey()
+cv2.destroyAllWindows() 
+
 ## 4.Write a program to convert color image into gray scale and binary image
 
 A binary image is the type of image where each pixel is black or white. You can also say the pixels as 0 or 1 value. Here 0 represents black and 1 represents a white pixel.
@@ -156,6 +183,8 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72543662/104419967-11c65800-552e-11eb-8e52-346684bc0a42.png)
 
 ## 6.Develop a program to create an image from 2D array.
+numpy.zeros() or np.zeros Python function is used to create a matrix full of zeroes. numpy.zeros() in Python can be used when you initialize the weights.
+Image.fromarray converts this array into an image of height h and width w.
 
 import numpy as np
 from PIL import Image
