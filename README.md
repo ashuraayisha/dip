@@ -206,7 +206,7 @@ c.waitKey(0)
 
 ![image](https://user-images.githubusercontent.com/72543662/104421431-2dcaf900-5530-11eb-9516-f5d512ac2558.png)
 
-## 7.Develop a program to find the neighbour of each element in the matrix.
+## 7.Develop a program to find the sum of neighbour of each element in the matrix.
 Here for each elements of the matrix.we are going to find then corresponding sum of matrix.
 numpy.zeros() or np.zeros Python function is used to create a matrix full of zeroes. numpy.zeros() in Python can be used when you initialize the weights.
 
@@ -241,6 +241,69 @@ answer:
  [[3. 5. 3.]
  [5. 8. 5.]
  [3. 5. 3.]]
+
+## 8.Develop a program to operator overloading.
+
+#include<iostream>
+using namespace std;
+class matrix 
+{
+        int m, n, x[30][30]; 
+public:
+        matrix(int a, int b)
+       { 
+                m=a;
+                n=b;
+       }
+        matrix(){}
+        void get();
+        void put();
+        matrix operator +(matrix);
+}; 
+
+void matrix:: get()
+{  
+        cout<<"\n Enter values into the matrix";
+               for(int i=0; i<m; i++)
+                       for(int j=0; j<n;j++)
+                       cin>>x[i][j];
+
+}
+
+void matrix:: put()
+{  
+        cout<<"\n the sum of the matrix is :\n";
+               for(int i=0; i<m; i++)
+               {
+                       for(int j=0; j<n;j++)
+                       cout<<x[i][j]<<"\t";
+                       cout<<endl;
+               }
+} 
+
+matrix matrix::operator +(matrix b)
+{   
+        matrix c(m,n);
+        for(int i=0; i<m; i++)
+                for(int j=0; j<n; j++)
+                c.x[i][j]= x[i][j] + b.x[i][j];
+        return c;
+}
+
+int main()
+{    
+        int m,n;
+        cout<<"\n Enter the size of the array";
+        cin>>m>>n;
+        matrix a(m,n) , b(m,n) , c;
+        a.get();
+        b.get();
+        c= a+b;
+        c.put();
+        return 0;
+}
+
+
 
 
 
