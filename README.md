@@ -106,18 +106,23 @@ cv2.destroyAllWindows()
 
 ## 5.Write a program to convert color image into different color space.
 Color Spaces in image processing are the color modes on the basis image can be segmented in particular object and non-object in an image.
+
 cv2.COLOR_BGR2GRAY: This code is used to convert BGR colored image to grayscale
-
 cv2.COLOR_BGR2HSV : This code is used to change the BGR color space to HSV color space.
-
 cv2.COLOR_BGR2RGB : This code is used to change the BGR color space to RGB color space.
-
 cv2. cv2.COLOR_BGR2LAB: This code is used to change the BGR color space to LAB color space.
+
+RGB color space:
+Linear RGB values are raw data obtained from a camera sensor. The value of R, G, and B are directly proportional to the amount of light that illuminates the sensor. Preprocessing of raw image data, such as white balance, color balance, and chromatic aberration compensation, are performed on linear RGB values.
+
 LAB color space :
+The L*a*b* color space provides a more perceptually uniform color space than the XYZ model. Colors in the L*a*b* color space can exist outside the RGB gamut (the valid set of RGB colors). For example, when you convert the L*a*b* value [100, 100, 100] to the RGB color space, the returned value is [1.7682, 0.5746, 0.1940], which is not a valid RGB color. For more information
 L – Represents Lightness.
 A – Color component ranging from Green to Magenta.
 B – Color component ranging from Blue to Yellow.
+
 HSV color space :
+The HSV (Hue, Saturation, Value) color space corresponds better to how people experience color than the RGB color space does. For example, this color space is often used by people who are selecting colors, such as paint or ink color, from a color wheel or palette.
 H : Hue represents dominant wavelength.
 S : Saturation represents shades of color.
 V : Value represents Intensity.
