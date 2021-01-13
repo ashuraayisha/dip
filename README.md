@@ -105,6 +105,23 @@ cv2.destroyAllWindows()
 ![image](https://user-images.githubusercontent.com/72543662/104290360-1bd55180-546f-11eb-80d3-c4a6a31607c1.png)
 
 ## 5.Write a program to convert color image into different color space.
+Color Spaces in image processing are the color modes on the basis image can be segmented in particular object and non-object in an image.
+cv2.COLOR_BGR2GRAY: This code is used to convert BGR colored image to grayscale
+
+cv2.COLOR_BGR2HSV : This code is used to change the BGR color space to HSV color space.
+
+cv2.COLOR_BGR2RGB : This code is used to change the BGR color space to RGB color space.
+
+cv2. cv2.COLOR_BGR2LAB: This code is used to change the BGR color space to LAB color space.
+LAB color space :
+L – Represents Lightness.
+A – Color component ranging from Green to Magenta.
+B – Color component ranging from Blue to Yellow.
+HSV color space :
+H : Hue represents dominant wavelength.
+S : Saturation represents shades of color.
+V : Value represents Intensity.
+
 import cv2
 image=cv2.imread("img20.jpg")
 cv2.imshow("old",image)
@@ -122,6 +139,7 @@ yuv = cv2.cvtColor(image, cv2.COLOR_BGR2YUV)
 cv2.imshow("YUV",yuv)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
 OUTPUT:
 
 
